@@ -40,13 +40,15 @@ public class TutorialMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
-        if(event.getTab().equals(CreativeModeTabs.INGREDIENTS)) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ZIRCON);
         }
-        if(event.getTab().equals(CreativeModeTabs.INGREDIENTS)) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_ZIRCON);
         }
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SQUIRREL);
+        }
 
     }
 
