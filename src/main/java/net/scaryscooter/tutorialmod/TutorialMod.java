@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.scaryscooter.tutorialmod.item.ModCreativeModeTabs;
 import net.scaryscooter.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -23,6 +24,8 @@ public class TutorialMod {
     // Very important comment
     public TutorialMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
 
@@ -40,13 +43,9 @@ public class TutorialMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        if(event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB.get()) {
             event.accept(ModItems.ZIRCON);
-        }
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_ZIRCON);
-        }
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SQUIRREL);
         }
 

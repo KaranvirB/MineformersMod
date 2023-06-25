@@ -1,5 +1,7 @@
 {
   "item.tutorialmod.zircon": "Zircon",
   "item.tutorialmod.raw_zircon": "Raw Zircon",
-  "item.tutorialmod.squirrel": "Squirrel"
+  "item.tutorialmod.squirrel": "Squirrel",
+
+  "creativemodetab.tutorial_tab": "Tutorial Tab"
 }
