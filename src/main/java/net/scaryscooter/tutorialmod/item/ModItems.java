@@ -11,9 +11,9 @@ import net.scaryscooter.tutorialmod.TutorialMod;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
 
-    public static final RegistryObject<Item> ZIRCON = ITEMS.register("zircon",
+    public static final RegistryObject<Item> TRANSFORMIUM = ITEMS.register("transformium",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> RAW_ZIRCON = ITEMS.register("raw_zircon",
+    public static final RegistryObject<Item> RAW_TRANSFORMIUM = ITEMS.register("raw_transformium",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SQUIRREL = ITEMS.register("squirrel",
             () -> new Item(new Item.Properties()));

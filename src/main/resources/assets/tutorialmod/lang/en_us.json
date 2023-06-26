@@ -1,7 +1,9 @@
 {
-  "item.tutorialmod.zircon": "Zircon",
-  "item.tutorialmod.raw_zircon": "Raw Zircon",
+  "item.tutorialmod.transformium": "Transformium",
+  "item.tutorialmod.raw_transformium": "Raw Transformium",
   "item.tutorialmod.squirrel": "Squirrel",
+
+  "block.tutorialmod.transformium_block": "Transformium Block",
 
   "creativemodetab.tutorial_tab": "Tutorial Tab"
 }

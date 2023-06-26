@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.scaryscooter.tutorialmod.block.ModBlocks;
 import net.scaryscooter.tutorialmod.item.ModCreativeModeTabs;
 import net.scaryscooter.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -28,6 +29,7 @@ public class TutorialMod {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -43,10 +45,11 @@ public class TutorialMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
-        if(event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB.get()) {
-            event.accept(ModItems.ZIRCON);
-            event.accept(ModItems.RAW_ZIRCON);
+        if(event.getTab() == ModCreativeModeTabs.CYBERTRON_GEAR_TAB.get()) {
+            event.accept(ModItems.TRANSFORMIUM);
+            event.accept(ModItems.RAW_TRANSFORMIUM);
             event.accept(ModItems.SQUIRREL);
+            event.accept(ModBlocks.TRANSFORMIUM_BLOCK);
         }
 
     }
