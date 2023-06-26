@@ -50,6 +50,11 @@ public class TutorialMod {
             event.accept(ModItems.RAW_TRANSFORMIUM);
             event.accept(ModItems.SQUIRREL);
             event.accept(ModBlocks.TRANSFORMIUM_BLOCK);
+            event.accept(ModBlocks.TRANSFORMIUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_TRANSFORMIUM_ORE);
+            event.accept(ModBlocks.UNSTABLE_TRANSFORMIUM_ORE);
+            event.accept(ModBlocks.DARK_ENERGON_ORE);
+            event.accept(ModBlocks.ENERGON_ORE);
         }
 
     }

@@ -2,10 +2,13 @@ package net.scaryscooter.tutorialmod.block;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.Material;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,7 +24,23 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> TRANSFORMIUM_BLOCK = registerBlock("transformium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)
-                    .strength(1f).requiresCorrectToolForDrops()));
+                    .strength(6f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final RegistryObject<Block> TRANSFORMIUM_ORE = registerBlock("transformium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+    public static final RegistryObject<Block> DEEPSLATE_TRANSFORMIUM_ORE = registerBlock("deepslate_transformium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+                    .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+    public static final RegistryObject<Block> UNSTABLE_TRANSFORMIUM_ORE = registerBlock("unstable_transformium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS)
+                    .strength(4f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+    public static final RegistryObject<Block> DARK_ENERGON_ORE = registerBlock("dark_energon_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
+                    .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+    public static final RegistryObject<Block> ENERGON_ORE = registerBlock("energon_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.LAPIS_ORE)
+                    .strength(4f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

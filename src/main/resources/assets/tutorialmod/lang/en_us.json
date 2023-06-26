@@ -4,6 +4,11 @@
   "item.tutorialmod.squirrel": "Squirrel",
 
   "block.tutorialmod.transformium_block": "Transformium Block",
+  "block.tutorialmod.transformium_ore": "Transformium Ore",
+  "block.tutorialmod.deepslate_transformium_ore": "Deepslate Transformium Ore",
+  "block.tutorialmod.unstable_transformium_ore": "Unstable Transformium Ore",
+  "block.tutorialmod.dark_energon_ore": "Dark Energon Ore",
+  "block.tutorialmod.energon_ore": "Energon Ore",
 
   "creativemodetab.tutorial_tab": "Tutorial Tab"
 }
