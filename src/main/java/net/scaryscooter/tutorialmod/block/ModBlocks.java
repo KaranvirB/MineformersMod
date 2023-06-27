@@ -25,6 +25,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> TRANSFORMIUM_BLOCK = registerBlock("transformium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)
                     .strength(6f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final RegistryObject<Block> DARK_ENERGON_BLOCK = registerBlock("dark_energon_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK)
+                    .strength(6f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+    public static final RegistryObject<Block> ENERGON_BLOCK = registerBlock("energon_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LAPIS_BLOCK)
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> TRANSFORMIUM_ORE = registerBlock("transformium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));

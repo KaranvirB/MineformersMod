@@ -48,8 +48,18 @@ public class TutorialMod {
         if(event.getTab() == ModCreativeModeTabs.CYBERTRON_GEAR_TAB.get()) {
             event.accept(ModItems.TRANSFORMIUM);
             event.accept(ModItems.RAW_TRANSFORMIUM);
+            event.accept(ModItems.DARK_ENERGON_CRYSTAL);
+            event.accept(ModItems.ENERGON_CUBE);
+            event.accept(ModItems.RAW_UNSTABLE_TRANSFORMIUM);
+            event.accept(ModItems.UNSTABLE_TRANSFORMIUM);
+            event.accept(ModItems.TRANSFORMIUM_CORE);
+            event.accept(ModItems.ENERGIZED_TRANSFORMIUM_CORE);
             event.accept(ModItems.SQUIRREL);
+
             event.accept(ModBlocks.TRANSFORMIUM_BLOCK);
+            event.accept(ModBlocks.DARK_ENERGON_BLOCK);
+            event.accept(ModBlocks.ENERGON_BLOCK);
+
             event.accept(ModBlocks.TRANSFORMIUM_ORE);
             event.accept(ModBlocks.DEEPSLATE_TRANSFORMIUM_ORE);
             event.accept(ModBlocks.UNSTABLE_TRANSFORMIUM_ORE);

@@ -15,6 +15,18 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_TRANSFORMIUM = ITEMS.register("raw_transformium",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DARK_ENERGON_CRYSTAL = ITEMS.register("dark_energon_crystal",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ENERGON_CUBE = ITEMS.register("energon_cube",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_UNSTABLE_TRANSFORMIUM = ITEMS.register("raw_unstable_transformium",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> UNSTABLE_TRANSFORMIUM = ITEMS.register("unstable_transformium",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TRANSFORMIUM_CORE = ITEMS.register("transformium_core",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ENERGIZED_TRANSFORMIUM_CORE = ITEMS.register("energized_transformium_core",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SQUIRREL = ITEMS.register("squirrel",
             () -> new Item(new Item.Properties()));
 

@@ -1,14 +1,22 @@
 {
   "item.tutorialmod.transformium": "Transformium",
   "item.tutorialmod.raw_transformium": "Raw Transformium",
+  "item.tutorialmod.unstable_transformium": "Unstable Transformium",
+  "item.tutorialmod.raw_unstable_transformium": "Raw Unstable Transformium",
+  "item.tutorialmod.dark_energon_crystal": "Dark Energon Crystal",
+  "item.tutorialmod.energon_cube": "Energon Cube",
+  "item.tutorialmod.transformium_core": "Transformium Core",
+  "item.tutorialmod.energized_transformium_core": "Energized Transformium Core",
   "item.tutorialmod.squirrel": "Squirrel",
 
   "block.tutorialmod.transformium_block": "Transformium Block",
+  "block.tutorialmod.dark_energon_block": "Block of Dark Energon",
+  "block.tutorialmod.energon_block": "Block of Energon",
   "block.tutorialmod.transformium_ore": "Transformium Ore",
   "block.tutorialmod.deepslate_transformium_ore": "Deepslate Transformium Ore",
   "block.tutorialmod.unstable_transformium_ore": "Unstable Transformium Ore",
   "block.tutorialmod.dark_energon_ore": "Dark Energon Ore",
   "block.tutorialmod.energon_ore": "Energon Ore",
 
-  "creativemodetab.tutorial_tab": "Tutorial Tab"
+  "creativemodetab.tutorial_tab": "Mineformers"
 }

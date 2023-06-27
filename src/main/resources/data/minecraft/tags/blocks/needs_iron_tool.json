@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:transformium_ore",
+    "tutorialmod:deepslate_transformium_ore",
+    "tutorialmod:energon_ore",
+    "tutorialmod:transformium_block"
+  ]
+}
