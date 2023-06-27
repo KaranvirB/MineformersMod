@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "tutorialmod:unstable_transformium"
+    },
+    "Q": {
+      "item": "tutorialmod:transformium_block"
+    }
+  },
+  "pattern": [
+    " Q ",
+    "Q#Q",
+    " Q "
+  ],
+  "result": {
+    "item": "tutorialmod:transformium_core"
+  }
+}

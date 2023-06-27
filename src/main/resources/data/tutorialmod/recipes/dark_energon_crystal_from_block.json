@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tutorialmod:dark_energon_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "tutorialmod:dark_energon_crystal"
+  }
+}
