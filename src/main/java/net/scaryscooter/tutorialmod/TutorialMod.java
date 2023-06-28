@@ -56,6 +56,8 @@ public class TutorialMod {
             event.accept(ModItems.ENERGIZED_TRANSFORMIUM_CORE);
             event.accept(ModItems.SQUIRREL);
 
+            event.accept(ModItems.TRANSFORMIUM_SWORD);
+
             event.accept(ModBlocks.TRANSFORMIUM_BLOCK);
             event.accept(ModBlocks.DARK_ENERGON_BLOCK);
             event.accept(ModBlocks.ENERGON_BLOCK);
