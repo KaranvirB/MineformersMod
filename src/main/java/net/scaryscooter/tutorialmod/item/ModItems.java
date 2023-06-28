@@ -27,7 +27,15 @@ public class ModItems {
     public static final RegistryObject<Item> ENERGIZED_TRANSFORMIUM_CORE = ITEMS.register("energized_transformium_core",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> TRANSFORMIUM_SWORD = ITEMS.register("transformium_sword",
-            () -> new SwordItem(Tiers.DIAMOND, 11, 5f, new Item.Properties()));
+            () -> new SwordItem(Tiers.DIAMOND, 9, 5f, new Item.Properties().durability(2000)));
+    public static final RegistryObject<Item> TRANSFORMIUM_PICKAXE = ITEMS.register("transformium_pickaxe",
+            () -> new PickaxeItem(Tiers.NETHERITE, 7, 5f, new Item.Properties().durability(2000)));
+    public static final RegistryObject<Item> TRANSFORMIUM_AXE = ITEMS.register("transformium_axe",
+            () -> new AxeItem(Tiers.NETHERITE, 10, 5f, new Item.Properties().durability(2000)));
+    public static final RegistryObject<Item> TRANSFORMIUM_SHOVEL = ITEMS.register("transformium_shovel",
+            () -> new ShovelItem(Tiers.NETHERITE, 6, 5f, new Item.Properties().durability(2000)));
+    public static final RegistryObject<Item> TRANSFORMIUM_HOE = ITEMS.register("transformium_hoe",
+            () -> new HoeItem(Tiers.NETHERITE, 8, 5f, new Item.Properties().durability(2000)));
     public static final RegistryObject<Item> SQUIRREL = ITEMS.register("squirrel",
             () -> new Item(new Item.Properties()));
 

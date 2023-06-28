@@ -57,6 +57,10 @@ public class TutorialMod {
             event.accept(ModItems.SQUIRREL);
 
             event.accept(ModItems.TRANSFORMIUM_SWORD);
+            event.accept(ModItems.TRANSFORMIUM_PICKAXE);
+            event.accept(ModItems.TRANSFORMIUM_AXE);
+            event.accept(ModItems.TRANSFORMIUM_SHOVEL);
+            event.accept(ModItems.TRANSFORMIUM_HOE);
 
             event.accept(ModBlocks.TRANSFORMIUM_BLOCK);
             event.accept(ModBlocks.DARK_ENERGON_BLOCK);

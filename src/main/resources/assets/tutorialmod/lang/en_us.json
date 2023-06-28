@@ -10,6 +10,10 @@
   "item.tutorialmod.squirrel": "Squirrel",
 
   "item.tutorialmod.transformium_sword": "Transformium Sword",
+  "item.tutorialmod.transformium_pickaxe": "Transformium Pickaxe",
+  "item.tutorialmod.transformium_axe": "Transformium Axe",
+  "item.tutorialmod.transformium_shovel": "Transformium Shovel",
+  "item.tutorialmod.transformium_hoe": "Transformium Hoe",
 
   "block.tutorialmod.transformium_block": "Transformium Block",
   "block.tutorialmod.dark_energon_block": "Block of Dark Energon",
