@@ -21,6 +21,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.TRANSFORMIUM_BLOCK.get());
         dropSelf(ModBlocks.DARK_ENERGON_BLOCK.get());
         dropSelf(ModBlocks.ENERGON_BLOCK.get());
+        dropSelf(ModBlocks.CYBERFORMED_LOG.get());
 
         add(ModBlocks.TRANSFORMIUM_ORE.get(),
                 (block) -> createOreDrop(ModBlocks.TRANSFORMIUM_ORE.get(), ModItems.RAW_TRANSFORMIUM.get()));
@@ -32,6 +33,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 (block) -> createOreDrop(ModBlocks.DARK_ENERGON_ORE.get(), ModItems.DARK_ENERGON_CRYSTAL.get()));
         add(ModBlocks.ENERGON_ORE.get(),
                 (block) -> createOreDrop(ModBlocks.ENERGON_ORE.get(), ModItems.ENERGON_CUBE.get()));
+
+        dropSelf(ModBlocks.CYBERFORMED_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_CYBERFORMED_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_CYBERFORMED_WOOD.get());
+        dropSelf(ModBlocks.CYBERFORMED_PLANKS.get());
+        dropSelf(ModBlocks.CYBERFORMED_SAPLING.get());
+
+        add(ModBlocks.CYBERFORMED_LEAVES.get(), (block) ->
+                createLeavesDrops(block, ModBlocks.CYBERFORMED_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
     protected Iterable<Block> getKnownBlocks() {

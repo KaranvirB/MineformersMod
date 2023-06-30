@@ -71,6 +71,14 @@ public class TutorialMod {
             event.accept(ModBlocks.UNSTABLE_TRANSFORMIUM_ORE);
             event.accept(ModBlocks.DARK_ENERGON_ORE);
             event.accept(ModBlocks.ENERGON_ORE);
+
+            event.accept(ModBlocks.CYBERFORMED_LEAVES);
+            event.accept(ModBlocks.CYBERFORMED_LOG);
+            event.accept(ModBlocks.CYBERFORMED_WOOD);
+            event.accept(ModBlocks.STRIPPED_CYBERFORMED_LOG);
+            event.accept(ModBlocks.STRIPPED_CYBERFORMED_WOOD);
+            event.accept(ModBlocks.CYBERFORMED_PLANKS);
+            event.accept(ModBlocks.CYBERFORMED_SAPLING);
         }
 
     }

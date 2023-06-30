@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:cyberformed_log",
+    "tutorialmod:cyberformed_wood",
+    "tutorialmod:stripped_cyberformed_log",
+    "tutorialmod:stripped_cyberformed_wood"
+  ]
+}
