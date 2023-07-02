@@ -112,6 +112,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .of(ModItems.TRANSFORMIUM.get()).build()))
                 .save(consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK)
+                .define('#', ModBlocks.CYBERFORMED_PLANKS.get())
+                .pattern("#")
+                .pattern("#")
+                .unlockedBy("has_cyberformed_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModBlocks.CYBERFORMED_PLANKS.get()).build()))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CYBERFORMED_PLANKS.get(), 4)
+                .requires(ModBlocks.CYBERFORMED_LOG.get())
+                .unlockedBy("has_cyberformed_log", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModBlocks.CYBERFORMED_LOG.get()).build()))
+                .save(consumer);
+
 //        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TRANSFORMIUM.get())
 //                .requires(ModBlocks.TRANSFORMIUM_BLOCK.get())
 //                .unlockedBy("has_transformium_block", inventoryTrigger(ItemPredicate.Builder.item()

@@ -24,5 +24,13 @@
   "block.tutorialmod.dark_energon_ore": "Dark Energon Ore",
   "block.tutorialmod.energon_ore": "Energon Ore",
 
+  "block.tutorialmod.cyberformed_log": "Cyberformed Log",
+  "block.tutorialmod.cyberformed_wood": "Cyberformed Wood",
+  "block.tutorialmod.stripped_cyberformed_log": "Stripped Cyberformed Log",
+  "block.tutorialmod.stripped_cyberformed_wood": "Stripped Cyberformed Wood",
+  "block.tutorialmod.cyberformed_planks": "Cyberformed Planks",
+  "block.tutorialmod.cyberformed_leaves": "Cyberformed Leaves",
+  "block.tutorialmod.cyberformed_sapling": "Cyberformed Sapling",
+
   "creativemodetab.tutorial_tab": "Mineformers"
 }

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:energized_transformium_core"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_transformium_core": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tutorialmod:transformium_core"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_transformium_core",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:energized_transformium_core"
+    ]
+  },
+  "sends_telemetry_event": false
+}
