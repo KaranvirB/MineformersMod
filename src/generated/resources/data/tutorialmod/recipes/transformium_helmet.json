@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "equipment",
   "key": {
     "#": {
-      "item": "tutorialmod:cyberformed_planks"
+      "item": "tutorialmod:transformium"
     }
   },
   "pattern": [
-    "#",
-    "#"
+    "###",
+    "# #"
   ],
   "result": {
-    "item": "minecraft:stick"
+    "item": "tutorialmod:transformium_helmet"
   },
   "show_notification": true
 }

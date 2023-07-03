@@ -26,6 +26,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ENERGIZED_TRANSFORMIUM_CORE = ITEMS.register("energized_transformium_core",
             () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> TRANSFORMIUM_SWORD = ITEMS.register("transformium_sword",
             () -> new SwordItem(Tiers.DIAMOND, 9, 5f, new Item.Properties().durability(2000)));
     public static final RegistryObject<Item> TRANSFORMIUM_PICKAXE = ITEMS.register("transformium_pickaxe",
@@ -38,6 +39,15 @@ public class ModItems {
             () -> new HoeItem(Tiers.NETHERITE, 8, 5f, new Item.Properties().durability(2000)));
     public static final RegistryObject<Item> SQUIRREL = ITEMS.register("squirrel",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TRANSFORMIUM_HELMET = ITEMS.register("transformium_helmet",
+            () -> new ArmorItem(ModArmorMaterials.TRANSFORMIUM, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> TRANSFORMIUM_CHESTPLATE = ITEMS.register("transformium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.TRANSFORMIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> TRANSFORMIUM_LEGGINGS = ITEMS.register("transformium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.TRANSFORMIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> TRANSFORMIUM_BOOTS = ITEMS.register("transformium_boots",
+            () -> new ArmorItem(ModArmorMaterials.TRANSFORMIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

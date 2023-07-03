@@ -15,6 +15,11 @@
   "item.tutorialmod.transformium_shovel": "Transformium Shovel",
   "item.tutorialmod.transformium_hoe": "Transformium Hoe",
 
+  "item.tutorialmod.transformium_helmet": "Transformium Helmet",
+  "item.tutorialmod.transformium_chestplate": "Transformium Chestplate",
+  "item.tutorialmod.transformium_leggings": "Transformium Leggings",
+  "item.tutorialmod.transformium_boots": "Transformium Boots",
+
   "block.tutorialmod.transformium_block": "Transformium Block",
   "block.tutorialmod.dark_energon_block": "Block of Dark Energon",
   "block.tutorialmod.energon_block": "Block of Energon",

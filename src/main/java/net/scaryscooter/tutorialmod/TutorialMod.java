@@ -62,6 +62,11 @@ public class TutorialMod {
             event.accept(ModItems.TRANSFORMIUM_SHOVEL);
             event.accept(ModItems.TRANSFORMIUM_HOE);
 
+            event.accept(ModItems.TRANSFORMIUM_HELMET);
+            event.accept(ModItems.TRANSFORMIUM_CHESTPLATE);
+            event.accept(ModItems.TRANSFORMIUM_LEGGINGS);
+            event.accept(ModItems.TRANSFORMIUM_BOOTS);
+
             event.accept(ModBlocks.TRANSFORMIUM_BLOCK);
             event.accept(ModBlocks.DARK_ENERGON_BLOCK);
             event.accept(ModBlocks.ENERGON_BLOCK);

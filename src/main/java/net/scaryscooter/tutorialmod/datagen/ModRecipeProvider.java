@@ -1,21 +1,36 @@
 package net.scaryscooter.tutorialmod.datagen;
 
 import net.minecraft.advancements.critereon.ItemPredicate;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.tutorial.Tutorial;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.data.tags.TagsProvider;
+import net.minecraft.nbt.Tag;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import net.minecraftforge.registries.RegistryObject;
 import net.scaryscooter.tutorialmod.TutorialMod;
 import net.scaryscooter.tutorialmod.block.ModBlocks;
 import net.scaryscooter.tutorialmod.item.ModItems;
+import net.scaryscooter.tutorialmod.util.ModTags;
 
 import javax.annotation.Nullable;
+import javax.swing.*;
+import java.rmi.registry.Registry;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -112,18 +127,55 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .of(ModItems.TRANSFORMIUM.get()).build()))
                 .save(consumer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK)
-                .define('#', ModBlocks.CYBERFORMED_PLANKS.get())
-                .pattern("#")
-                .pattern("#")
-                .unlockedBy("has_cyberformed_planks", inventoryTrigger(ItemPredicate.Builder.item()
-                        .of(ModBlocks.CYBERFORMED_PLANKS.get()).build()))
-                .save(consumer);
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 4)
+//                .define('#', Ingredient.of())
+//                .pattern("#")
+//                .pattern("#")
+//                .unlockedBy("has_cyberformed_planks", inventoryTrigger(ItemPredicate.Builder.item()
+//                        .of(ModBlocks.CYBERFORMED_PLANKS.get()).build()))
+//                .save(consumer);
+
+        stickRecipe(consumer, RecipeCategory.MISC, Items.STICK, ModBlocks.CYBERFORMED_PLANKS.get());
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CYBERFORMED_PLANKS.get(), 4)
                 .requires(ModBlocks.CYBERFORMED_LOG.get())
                 .unlockedBy("has_cyberformed_log", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModBlocks.CYBERFORMED_LOG.get()).build()))
+                .save(consumer);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TRANSFORMIUM_HELMET.get())
+                .define('#', ModItems.TRANSFORMIUM.get())
+                .pattern("###")
+                .pattern("# #")
+                .unlockedBy("has_transformium", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.TRANSFORMIUM.get()).build()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TRANSFORMIUM_CHESTPLATE.get())
+                .define('#', ModItems.TRANSFORMIUM.get())
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .unlockedBy("has_transformium", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.TRANSFORMIUM.get()).build()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TRANSFORMIUM_LEGGINGS.get())
+                .define('#', ModItems.TRANSFORMIUM.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .unlockedBy("has_transformium", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.TRANSFORMIUM.get()).build()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TRANSFORMIUM_BOOTS.get())
+                .define('#', ModItems.TRANSFORMIUM.get())
+                .pattern("# #")
+                .pattern("# #")
+                .unlockedBy("has_transformium", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.TRANSFORMIUM.get()).build()))
                 .save(consumer);
 
 //        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TRANSFORMIUM.get())
@@ -168,5 +220,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(p_250423_, new ResourceLocation(TutorialMod.MOD_ID, p_252237_));
         ShapedRecipeBuilder.shaped(p_248977_, p_251911_).define('#', p_250042_).pattern("###").pattern("###").pattern("###").group(p_248641_)
                 .unlockedBy(getHasName(p_250042_), has(p_250042_)).save(p_250423_, new ResourceLocation(TutorialMod.MOD_ID, p_250475_));
+    }
+
+    protected static void stickRecipe(Consumer<FinishedRecipe> consumer, RecipeCategory recipeCategory, ItemLike itemLike, ItemLike plankLike) {
+        stickRecipe(consumer, recipeCategory, itemLike, plankLike, (String)null);
+    }
+    protected static void stickRecipe(Consumer<FinishedRecipe> consumer, RecipeCategory category, ItemLike itemLike, ItemLike plankLike, @Nullable String groupLike) {
+        ShapedRecipeBuilder.shaped(category, itemLike)
+                .define('#', plankLike)
+                .pattern("#")
+                .pattern("#")
+                .group(groupLike).unlockedBy(getHasName(plankLike),
+                has(plankLike)).save(consumer, new ResourceLocation(TutorialMod.MOD_ID, getItemName(plankLike)) + "_stick");
+    }
+    protected static String getHasName(ItemLike itemLike) {
+        return "has_" + getItemName(itemLike);
+    }
+
+    protected static String getItemName(ItemLike name) {
+        return BuiltInRegistries.ITEM.getKey(name.asItem()).getPath();
     }
 }

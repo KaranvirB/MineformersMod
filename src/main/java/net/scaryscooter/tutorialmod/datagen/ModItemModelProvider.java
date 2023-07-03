@@ -36,6 +36,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         saplingItem(ModBlocks.CYBERFORMED_SAPLING);
 
+        simpleItem(ModItems.TRANSFORMIUM_HELMET);
+        simpleItem(ModItems.TRANSFORMIUM_CHESTPLATE);
+        simpleItem(ModItems.TRANSFORMIUM_LEGGINGS);
+        simpleItem(ModItems.TRANSFORMIUM_BOOTS);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
