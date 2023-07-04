@@ -135,7 +135,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 //                        .of(ModBlocks.CYBERFORMED_PLANKS.get()).build()))
 //                .save(consumer);
 
-        stickRecipe(consumer, RecipeCategory.MISC, Items.STICK, ModBlocks.CYBERFORMED_PLANKS.get());
+        stickRecipe(consumer, RecipeCategory.MISC, Items.STICK, 4, ModBlocks.CYBERFORMED_PLANKS.get());
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CYBERFORMED_PLANKS.get(), 4)
                 .requires(ModBlocks.CYBERFORMED_LOG.get())
@@ -222,11 +222,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(p_250042_), has(p_250042_)).save(p_250423_, new ResourceLocation(TutorialMod.MOD_ID, p_250475_));
     }
 
-    protected static void stickRecipe(Consumer<FinishedRecipe> consumer, RecipeCategory recipeCategory, ItemLike itemLike, ItemLike plankLike) {
-        stickRecipe(consumer, recipeCategory, itemLike, plankLike, (String)null);
+    protected static void stickRecipe(Consumer<FinishedRecipe> consumer, RecipeCategory recipeCategory, ItemLike itemLike, int count,  ItemLike plankLike) {
+        stickRecipe(consumer, recipeCategory, itemLike, count,  plankLike, (String)null);
     }
-    protected static void stickRecipe(Consumer<FinishedRecipe> consumer, RecipeCategory category, ItemLike itemLike, ItemLike plankLike, @Nullable String groupLike) {
-        ShapedRecipeBuilder.shaped(category, itemLike)
+    protected static void stickRecipe(Consumer<FinishedRecipe> consumer, RecipeCategory category, ItemLike itemLike, int count, ItemLike plankLike, @Nullable String groupLike) {
+        ShapedRecipeBuilder.shaped(category, itemLike, count)
                 .define('#', plankLike)
                 .pattern("#")
                 .pattern("#")

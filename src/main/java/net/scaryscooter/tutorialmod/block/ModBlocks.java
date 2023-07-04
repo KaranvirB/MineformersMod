@@ -43,10 +43,10 @@ public class ModBlocks {
                     .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
     public static final RegistryObject<Block> UNSTABLE_TRANSFORMIUM_ORE = registerBlock("unstable_transformium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS)
-                    .strength(4f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+                    .strength(4f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
     public static final RegistryObject<Block> DARK_ENERGON_ORE = registerBlock("dark_energon_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
-                    .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+                    .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(4, 8)));
     public static final RegistryObject<Block> ENERGON_ORE = registerBlock("energon_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.LAPIS_ORE)
                     .strength(4f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));

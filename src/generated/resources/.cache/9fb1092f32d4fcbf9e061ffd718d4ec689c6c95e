@@ -1,4 +1,4 @@
-// 1.20.1	2023-07-03T15:36:56.9497742	Recipes
+// 1.20.1	2023-07-03T21:00:09.5457667	Recipes
 4d72e5c198c7d441158a286b3b70a7522804e580 data/tutorialmod/advancements/recipes/building_blocks/dark_energon_crystal.json
 6ee8f3695028b829aa18bf26d2c460732b0ab1e4 data/tutorialmod/advancements/recipes/building_blocks/energon_cube.json
 d559c65369a284a0665d26cf79d0d8b0dcd7e423 data/tutorialmod/advancements/recipes/building_blocks/transformium.json
@@ -23,7 +23,7 @@ ded336ad9a4a3edccdec6b52bf86869dc5face08 data/tutorialmod/advancements/recipes/m
 94ebe76b8486f57dae629cafacb97f031564159d data/tutorialmod/advancements/recipes/misc/unstable_transformium_from_blasting_raw_unstable_transformium.json
 7406edbb6da124485325eac6f4a74ebb5b4762cd data/tutorialmod/advancements/recipes/misc/unstable_transformium_from_smelting_raw_unstable_transformium.json
 37747b25ef55669043fc81029f82f2bb6a21757b data/tutorialmod/recipes/cyberformed_planks.json
-a13602979e93048e6a0e5430bbe5e1d182ffae6d data/tutorialmod/recipes/cyberformed_planks_stick.json
+5610cacb347903a85f120c268a5aae7934b3a85c data/tutorialmod/recipes/cyberformed_planks_stick.json
 4cd62e775eed1b5fe30c08c73ccd43da66afae4f data/tutorialmod/recipes/dark_energon_block.json
 f48f6dce5ca977f31a04d1e78aadaafcf3cd95da data/tutorialmod/recipes/dark_energon_crystal.json
 d9505f79cde68a27085fecee706efb4cb9bdd4d8 data/tutorialmod/recipes/energized_transformium_core.json
