@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraft:is_nether",
+  "biomes": "#is_nether",
   "features": "tutorialmod:unstable_transformium_placed",
   "step": "underground_ores"
 }

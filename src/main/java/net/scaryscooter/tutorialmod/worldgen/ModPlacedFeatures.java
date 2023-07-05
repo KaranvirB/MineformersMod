@@ -35,16 +35,16 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 01, 2), ModBlocks.CYBERFORMED_SAPLING.get()));
 
         register(context, TRANSFORMIUM_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.TRANSFORMIUM_KEY),
-                ModOrePlacement.commonOrePlacement(9,
+                ModOrePlacement.commonOrePlacement(7,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-80), VerticalAnchor.absolute(20))));
         register(context, UNSTABLE_TRANSFORMIUM_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.UNSTABLE_TRANSFORMIUM_KEY),
-                ModOrePlacement.commonOrePlacement(9,
-                        HeightRangePlacement.uniform(VerticalAnchor.belowTop(0), VerticalAnchor.aboveBottom(0))));
+                ModOrePlacement.commonOrePlacement(7,
+                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-64), VerticalAnchor.absolute(80))));
         register(context, DARK_ENERGON_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DARK_ENERGON_KEY),
-                ModOrePlacement.commonOrePlacement(5,
-                        HeightRangePlacement.uniform(VerticalAnchor.belowTop(0), VerticalAnchor.aboveBottom(0))));
+                ModOrePlacement.commonOrePlacement(3,
+                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-64), VerticalAnchor.absolute(80))));
         register(context, ENERGON_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENERGON_KEY),
-                ModOrePlacement.commonOrePlacement(16,
+                ModOrePlacement.commonOrePlacement(10,
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(20), VerticalAnchor.absolute(150))));
     }
 

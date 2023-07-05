@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraft:is_end",
+  "biomes": "#is_end",
   "features": "tutorialmod:dark_energon_placed",
   "step": "underground_ores"
 }

@@ -51,8 +51,8 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, TRANSFORMIUM_KEY, Feature.ORE, new OreConfiguration(overworldTransformiumOres, 6));
-        register(context, UNSTABLE_TRANSFORMIUM_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables, ModBlocks.UNSTABLE_TRANSFORMIUM_ORE.get().defaultBlockState(), 20));
-        register(context, DARK_ENERGON_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables, ModBlocks.DARK_ENERGON_ORE.get().defaultBlockState(), 30, 0.5F));
+        register(context, UNSTABLE_TRANSFORMIUM_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables, ModBlocks.UNSTABLE_TRANSFORMIUM_ORE.get().defaultBlockState(), 4, 0.1F));
+        register(context, DARK_ENERGON_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables, ModBlocks.DARK_ENERGON_ORE.get().defaultBlockState(), 4, 0.5F));
         register(context, ENERGON_KEY, Feature.ORE, new OreConfiguration(stoneReplaceablesEnergon, ModBlocks.ENERGON_ORE.get().defaultBlockState(), 12));
     }
 
