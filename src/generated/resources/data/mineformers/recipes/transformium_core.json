@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mineformers:transformium_block"
+    },
+    "Q": {
+      "item": "mineformers:unstable_transformium"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#Q#",
+    " # "
+  ],
+  "result": {
+    "item": "mineformers:transformium_core"
+  },
+  "show_notification": true
+}

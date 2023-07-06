@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:transformium_ore",
-    "tutorialmod:deepslate_transformium_ore",
-    "tutorialmod:energon_ore",
-    "tutorialmod:transformium_block"
+    "mineformers:transformium_ore",
+    "mineformers:deepslate_transformium_ore",
+    "mineformers:energon_ore",
+    "mineformers:transformium_block"
   ]
 }

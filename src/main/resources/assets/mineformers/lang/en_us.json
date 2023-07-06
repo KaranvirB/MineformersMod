@@ -1,0 +1,42 @@
+{
+  "item.mineformers.transformium": "Transformium",
+  "item.mineformers.raw_transformium": "Raw Transformium",
+  "item.mineformers.unstable_transformium": "Unstable Transformium",
+  "item.mineformers.raw_unstable_transformium": "Raw Unstable Transformium",
+  "item.mineformers.dark_energon_crystal": "Dark Energon Crystal",
+  "item.mineformers.energon_cube": "Energon Cube",
+  "item.mineformers.transformium_core": "Transformium Core",
+  "item.mineformers.energized_transformium_core": "Energized Transformium Core",
+  "item.mineformers.squirrel": "Squirrel",
+
+  "item.mineformers.transformium_sword": "Transformium Sword",
+  "item.mineformers.transformium_pickaxe": "Transformium Pickaxe",
+  "item.mineformers.transformium_axe": "Transformium Axe",
+  "item.mineformers.transformium_shovel": "Transformium Shovel",
+  "item.mineformers.transformium_hoe": "Transformium Hoe",
+
+  "item.mineformers.transformium_helmet": "Transformium Helmet",
+  "item.mineformers.transformium_chestplate": "Transformium Chestplate",
+  "item.mineformers.transformium_leggings": "Transformium Leggings",
+  "item.mineformers.transformium_boots": "Transformium Boots",
+
+  "block.mineformers.transformium_block": "Transformium Block",
+  "block.mineformers.dark_energon_block": "Block of Dark Energon",
+  "block.mineformers.energon_block": "Block of Energon",
+  "block.mineformers.transformium_ore": "Transformium Ore",
+  "block.mineformers.deepslate_transformium_ore": "Deepslate Transformium Ore",
+  "block.mineformers.unstable_transformium_ore": "Unstable Transformium Ore",
+  "block.mineformers.dark_energon_ore": "Dark Energon Ore",
+  "block.mineformers.energon_ore": "Energon Ore",
+
+  "block.mineformers.cyberformed_log": "Cyberformed Log",
+  "block.mineformers.cyberformed_wood": "Cyberformed Wood",
+  "block.mineformers.stripped_cyberformed_log": "Stripped Cyberformed Log",
+  "block.mineformers.stripped_cyberformed_wood": "Stripped Cyberformed Wood",
+  "block.mineformers.cyberformed_planks": "Cyberformed Planks",
+  "block.mineformers.cyberformed_leaves": "Cyberformed Leaves",
+  "block.mineformers.cyberformed_sapling": "Cyberformed Sapling",
+  "block.mineformers.cyberformed_button": "Cyberformed Button",
+
+  "creativemodetab.mineformers_tab": "Mineformers"
+}

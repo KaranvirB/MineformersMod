@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mineformers:block/unstable_transformium_ore"
+    }
+  }
+}

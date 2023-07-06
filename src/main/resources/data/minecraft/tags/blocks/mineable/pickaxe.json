@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:transformium_block",
-    "tutorialmod:dark_energon_block",
-    "tutorialmod:energon_block",
-    "tutorialmod:transformium_ore",
-    "tutorialmod:deepslate_transformium_ore",
-    "tutorialmod:unstable_transformium_ore",
-    "tutorialmod:dark_energon_ore",
-    "tutorialmod:energon_ore"
+    "mineformers:transformium_block",
+    "mineformers:dark_energon_block",
+    "mineformers:energon_block",
+    "mineformers:transformium_ore",
+    "mineformers:deepslate_transformium_ore",
+    "mineformers:unstable_transformium_ore",
+    "mineformers:dark_energon_ore",
+    "mineformers:energon_ore"
   ]
 }

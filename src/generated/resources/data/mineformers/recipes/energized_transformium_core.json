@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mineformers:energon_block"
+    },
+    "Q": {
+      "item": "mineformers:transformium_core"
+    }
+  },
+  "pattern": [
+    "###",
+    "#Q#",
+    "###"
+  ],
+  "result": {
+    "item": "mineformers:energized_transformium_core"
+  },
+  "show_notification": true
+}

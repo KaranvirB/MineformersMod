@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "unstable_transformium",
+  "ingredient": {
+    "item": "mineformers:raw_unstable_transformium"
+  },
+  "result": "mineformers:unstable_transformium"
+}

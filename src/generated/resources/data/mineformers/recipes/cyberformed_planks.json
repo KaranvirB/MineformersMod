@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mineformers:cyberformed_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "mineformers:cyberformed_planks"
+  }
+}

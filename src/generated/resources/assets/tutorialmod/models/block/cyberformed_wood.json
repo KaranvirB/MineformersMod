@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "tutorialmod:block/cyberformed_log",
-    "side": "tutorialmod:block/cyberformed_log"
-  }
-}

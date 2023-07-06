@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:cyberformed_log",
-    "tutorialmod:cyberformed_wood",
-    "tutorialmod:stripped_cyberformed_log",
-    "tutorialmod:stripped_cyberformed_wood"
+    "mineformers:cyberformed_log",
+    "mineformers:cyberformed_wood",
+    "mineformers:stripped_cyberformed_log",
+    "mineformers:stripped_cyberformed_wood"
   ]
 }

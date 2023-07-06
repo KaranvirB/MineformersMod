@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mineformers:transformium"
+    },
+    "Q": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "##",
+    " Q",
+    " Q"
+  ],
+  "result": {
+    "item": "mineformers:transformium_hoe"
+  },
+  "show_notification": true
+}
