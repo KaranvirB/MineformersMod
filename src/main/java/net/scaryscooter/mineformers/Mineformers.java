@@ -13,6 +13,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.scaryscooter.mineformers.block.ModBlocks;
 import net.scaryscooter.mineformers.item.ModCreativeModeTabs;
 import net.scaryscooter.mineformers.item.ModItems;
+import net.scaryscooter.mineformers.networking.ModMessages;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -38,7 +39,7 @@ public class Mineformers {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        ModMessages.register();
     }
 
     // Add the example block item to the building blocks tab
