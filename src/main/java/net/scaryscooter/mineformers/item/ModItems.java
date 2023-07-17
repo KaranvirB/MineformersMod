@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.scaryscooter.mineformers.Mineformers;
+import net.scaryscooter.mineformers.item.custom.TransformiumMultiTool;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Mineformers.MOD_ID);
@@ -37,6 +38,8 @@ public class ModItems {
             () -> new ShovelItem(Tiers.DIAMOND, 0.5F, -3.0f, new Item.Properties().durability(2000)));
     public static final RegistryObject<Item> TRANSFORMIUM_HOE = ITEMS.register("transformium_hoe",
             () -> new HoeItem(Tiers.DIAMOND, -3, 0f, new Item.Properties().durability(2000)));
+    public static final RegistryObject<Item> TRANSFORMIUM_MULTI_TOOL = ITEMS.register("transformium_multi_tool",
+            () -> new TransformiumMultiTool(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> SQUIRREL = ITEMS.register("squirrel",
             () -> new Item(new Item.Properties()));
 

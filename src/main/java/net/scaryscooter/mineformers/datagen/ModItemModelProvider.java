@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import net.scaryscooter.mineformers.Mineformers;
 import net.scaryscooter.mineformers.block.ModBlocks;
@@ -33,6 +34,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.TRANSFORMIUM_AXE);
         handheldItem(ModItems.TRANSFORMIUM_SHOVEL);
         handheldItem(ModItems.TRANSFORMIUM_HOE);
+        handheldItem(ModItems.TRANSFORMIUM_MULTI_TOOL);
 
         saplingItem(ModBlocks.CYBERFORMED_SAPLING);
 

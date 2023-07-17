@@ -14,6 +14,7 @@
   "item.mineformers.transformium_axe": "Transformium Axe",
   "item.mineformers.transformium_shovel": "Transformium Shovel",
   "item.mineformers.transformium_hoe": "Transformium Hoe",
+  "item.mineformers.transformium_multi_tool": "Transformium Multi-Tool",
 
   "item.mineformers.transformium_helmet": "Transformium Helmet",
   "item.mineformers.transformium_chestplate": "Transformium Chestplate",
@@ -39,7 +40,8 @@
   "block.mineformers.cyberformed_button": "Cyberformed Button",
 
   "key.category.mineformers.modded": "Mineformers",
-  "key.mineformers.test": "Test",
+  "key.mineformers.copy_key": "Copy",
+  "key.mineformers.paste_key": "Paste",
 
   "creativemodetab.mineformers_tab": "Mineformers"
 }

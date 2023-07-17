@@ -61,6 +61,7 @@ public class Mineformers {
             event.accept(ModItems.TRANSFORMIUM_AXE);
             event.accept(ModItems.TRANSFORMIUM_SHOVEL);
             event.accept(ModItems.TRANSFORMIUM_HOE);
+            event.accept(ModItems.TRANSFORMIUM_MULTI_TOOL);
 
             event.accept(ModItems.TRANSFORMIUM_HELMET);
             event.accept(ModItems.TRANSFORMIUM_CHESTPLATE);

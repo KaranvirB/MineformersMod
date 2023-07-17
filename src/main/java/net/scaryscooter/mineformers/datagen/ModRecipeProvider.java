@@ -63,7 +63,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .of(ModItems.TRANSFORMIUM_CORE.get()).build()))
                 .save(consumer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TRANSFORMIUM_PICKAXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TRANSFORMIUM_PICKAXE.get())
                 .define('#', ModItems.TRANSFORMIUM.get())
                 .define('Q', Items.STICK)
                 .pattern("###")
@@ -83,7 +83,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .of(ModItems.TRANSFORMIUM.get()).build()))
                 .save(consumer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TRANSFORMIUM_AXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TRANSFORMIUM_AXE.get())
                 .define('#', ModItems.TRANSFORMIUM.get())
                 .define('Q', Items.STICK)
                 .pattern("##")
@@ -93,7 +93,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .of(ModItems.TRANSFORMIUM.get()).build()))
                 .save(consumer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TRANSFORMIUM_SHOVEL.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TRANSFORMIUM_SHOVEL.get())
                 .define('#', ModItems.TRANSFORMIUM.get())
                 .define('Q', Items.STICK)
                 .pattern("#")
@@ -103,7 +103,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .of(ModItems.TRANSFORMIUM.get()).build()))
                 .save(consumer);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TRANSFORMIUM_HOE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TRANSFORMIUM_HOE.get())
                 .define('#', ModItems.TRANSFORMIUM.get())
                 .define('Q', Items.STICK)
                 .pattern("##")
@@ -111,6 +111,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" Q")
                 .unlockedBy("has_transformium", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.TRANSFORMIUM.get()).build()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TRANSFORMIUM_MULTI_TOOL.get())
+                .define('#', ModItems.TRANSFORMIUM.get())
+                .define('Q', Items.STICK)
+                .define('W', ModItems.TRANSFORMIUM_CORE.get())
+                .pattern("## ")
+                .pattern("#W#")
+                .pattern(" #Q")
+                .unlockedBy("has_transformium_core", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.TRANSFORMIUM_CORE.get()).build()))
                 .save(consumer);
 
         stickRecipe(consumer, RecipeCategory.MISC, Items.STICK, 4, ModBlocks.CYBERFORMED_PLANKS.get());
