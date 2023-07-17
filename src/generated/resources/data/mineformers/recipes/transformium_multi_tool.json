@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "mineformers:transformium"
+    },
+    "Q": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "mineformers:transformium_core"
+    }
+  },
+  "pattern": [
+    "## ",
+    "#W#",
+    " #Q"
+  ],
+  "result": {
+    "item": "mineformers:transformium_multi_tool"
+  },
+  "show_notification": true
+}
